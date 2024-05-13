@@ -18,6 +18,9 @@ git rm
 # Create a branch directly with :
 git branch feature-branch-name
 
+# Create Pull request on Gitub for the new branch (the first time a branch is pushed to GitHub)
+git push --set-upstream origin bfeature-branch-name
+
 # Switch branches:
 git switch
 
