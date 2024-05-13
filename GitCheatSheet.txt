@@ -1,2 +1,50 @@
-List all branches:
+Source:
+https://medium.com/@jake.page91/the-guide-to-git-i-never-had
+https://www.linkedin.com/learning/learning-github
+ 
+
+# List all branches:
 git branch --all
+
+# Detailed information about the commit with that hash:
+git show abc123def456789
+
+#Show chronological list of commits:
+git log
+
+# Unstage changes:
+git rm
+
+# Create a branch directly with :
+git branch feature-branch-name
+
+# Switch branches:
+git switch
+
+# Rewrite commits history. Be aware that force can overwrite the history. Do not use on main.
+git checkout your_branch
+git fetch
+git rebase upstream_branch
+git push origin your_branch --force
+
+#Condense multiple commits into a single commit:
+git reset --soft HEAD~X
+git commit -m "Your squashed commit message"
+git push origin your_branch --force
+
+# Select changes to be incorporated from one branch to another
+git checkout target_branch
+git cherry-pick <commit-hash> # Do this multiple times if multiple commits are wanted
+git push origin target_branch
+
+# Reset Working Directory to Last Commit
+git reset --hard
+
+# Undo Last Commit (use with caution)
+git reset --soft HEAD^
+
+# Discard Changes in Working Directory
+git restore <file(s)>
+
+# Retrieve Lost Commit References
+git reflog
