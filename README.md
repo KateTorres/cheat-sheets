@@ -1,2 +1,2 @@
 # MiscellaneousLearning
-This Repo contains Git-related cheat sheets, practice examples
+This Repo is my playground. I practice difefrent things here. Do not try to make sence from what you see here.
