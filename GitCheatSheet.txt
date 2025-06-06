@@ -1,22 +1,21 @@
-Source:
-https://medium.com/@jake.page91/the-guide-to-git-i-never-had
-https://www.linkedin.com/learning/learning-github
- 
-
-# List all branches:
-git branch --all
-
-# Detailed information about the commit with that hash:
-git show abc123def456789
-
 #Show chronological list of commits:
 git log
 
-# Unstage changes:
-git rm
+# Detailed information about the commit:
+git show abc123def456789
+
+# Remove file:
+git rm filename
+
+# Restore file:
+git restore --staged filename
+git restore filename
 
 # Create a branch directly with :
 git branch feature-branch-name
+
+# List all branches:
+git branch --all
 
 # Switch branches:
 git switch
@@ -48,3 +47,7 @@ git restore <file(s)>
 
 # Retrieve Lost Commit References
 git reflog
+
+Source:
+https://medium.com/@jake.page91/the-guide-to-git-i-never-had
+https://www.linkedin.com/learning/learning-github
